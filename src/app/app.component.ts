@@ -26,6 +26,9 @@ export class AppComponent {
       this.input = '';
     }
   }
+  formatInput(input: string): string {
+    return input.replace(/\n/g, '<br>');
+  }
 }
 
 
